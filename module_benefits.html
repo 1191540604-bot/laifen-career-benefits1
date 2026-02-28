@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <script>
+      // DO NOT REMOVE THIS SCRIPT
+      // 运行时动态计算 basename
+      (function() {
+        var pathname = window.location.pathname;
+        pathname = pathname.replace(/\/module_benefits\.html?$/, '');
+        var basename = pathname || '/';
+        if (basename !== '/' && basename.endsWith('/')) {
+          basename = basename.slice(0, -1);
+        }
+        window.__APP_BASENAME__ = basename;
+
+        // 设置 <base> 标签，让所有相对路径资源正确解析
+        var base = document.createElement('base');
+        // 如果 basename 是 '/'，直接设置为 '/'，否则添加 '/'
+        base.href = basename === '/' ? '/' : basename + '/';
+        document.head.appendChild(base);
+      })();
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>成长福利 - 徕芬科技2026届校园招聘</title>
+    <meta name="description" content="徕芬科技员工成长福利 - 全球化视野、研产销一体、导师制培养、多元薪酬福利">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- AOS Animation -->
+    <link href="https://lf3-static.bytednsdoc.com/obj/eden-cn/LMfspH/ljhwZthlaukjlkulzlp/webpage/aos@2.3.1.css" rel="stylesheet">
+    <script src="https://lf3-static.bytednsdoc.com/obj/eden-cn/LMfspH/ljhwZthlaukjlkulzlp/webpage/aos@2.3.1.js"></script>
+    
+    <style>
+        :root {
+            --primary-color: #1456f0;
+            --accent-color: #1f2329;
+            --neutral-color: #f2f3f5;
+            --text-primary: #1f2329;
+            --text-secondary: #6b7280;
+            --bg-light: #ffffff;
+            --bg-neutral: #f8fafc;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .module-benefits {
+            font-family: 'PingFang SC', 'Microsoft YaHei', 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background-color: var(--bg-neutral);
+        }
+    </style>
+</head>
+<body>
+    <div class="module-benefits">
+        <!-- 成长福利 -->
+        <section id="benefits" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <h2 class="text-4xl font-bold text-gray-900 mb-4">成长福利</h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                        我们提供全面的成长支持和福利保障，助力每一位员工的职业发展
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+                    <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">全球化视野</h3>
+                        <p class="text-gray-600">
+                            立足中国，放眼全球，与来自世界各地的优秀同事一起工作，拓展国际视野
+                        </p>
+                    </div>
+
+                    <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+                        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">研产销一体</h3>
+                        <p class="text-gray-600">
+                            从研发到生产再到销售，完整的产业链让你全面了解产品全生命周期
+                        </p>
+                    </div>
+
+                    <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+                        <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">导师制培养</h3>
+                        <p class="text-gray-600">
+                            一对一导师指导，帮助你快速融入团队，掌握专业技能，规划职业发展路径
+                        </p>
+                    </div>
+
+                    <div class="text-center" data-aos="fade-up" data-aos-delay="400">
+                        <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">多元薪酬福利</h3>
+                        <p class="text-gray-600">
+                            具有竞争力的薪酬体系，完善的福利保障，丰富的员工活动和团建机会
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 详细福利说明 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg">
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div data-aos="fade-right">
+                            <h4 class="text-xl font-semibold mb-4 text-blue-600">自产产品</h4>
+                            <p class="text-gray-600 mb-6">
+                                拥有自主研发和生产能力，从产品设计到制造全程把控，确保产品质量和创新性。
+                                你将有机会参与到完整的产品开发流程中。
+                            </p>
+
+                            <h4 class="text-xl font-semibold mb-4 text-blue-600">专注细节</h4>
+                            <p class="text-gray-600">
+                                追求极致的用户体验，关注每一个产品细节。我们相信，
+                                只有通过精益求精的态度，才能创造出真正优秀的产品。
+                            </p>
+                        </div>
+
+                        <div data-aos="fade-left">
+                            <h4 class="text-xl font-semibold mb-4 text-blue-600">探索极致</h4>
+                            <p class="text-gray-600 mb-6">
+                                鼓励创新思维，支持技术探索。我们提供充足的资源和平台，
+                                让你能够不断挑战自我，追求技术和产品的极致表现。
+                            </p>
+
+                            <h4 class="text-xl font-semibold mb-4 text-blue-600">岗位赋能</h4>
+                            <p class="text-gray-600">
+                                提供完善的培训体系和职业发展通道，通过内部轮岗、项目锻炼等方式，
+                                帮助你快速成长为专业领域的优秀人才。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // AOS动画初始化
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+    </script>
+</body>
+</html>
